@@ -1,0 +1,18 @@
+# a comment - this is ignored
+stereoVision
+# no *~ files
+*~
+# no .a files
+*.a
+# but do track lib.a, even though you're ignoring .a files above
+!lib.a
+# ignore all files in the build/ directory
+build/
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+# ignore all .txt files in the doc/ directory
+doc/**/*.txt
+# ignore all files in log/ directory
+log/
+#bin/
+doc/
