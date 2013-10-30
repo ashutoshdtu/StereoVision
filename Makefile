@@ -30,9 +30,4 @@ APP_BIN_DIR = ${shell pwd}/bin
 #######################################################################
 
 main:
-	${CCC} ${APP_SRC_DIR}/${APP_SRC} -o ${APP_BIN_DIR}/${APP_BIN}_v${PROJ_VER} ${CFLAGS} ${LFLAGS} 
-	cp ${APP_SRC_DIR}/${APP_SRC} ${APP_SRC_DIR}/backup/${APP_SRC}_v${PROJ_VER}
-	rm ${APP_BIN_DIR}/${APP_BIN}
-	rm ${shell pwd}/${APP_BIN}
-	ln --physical ${APP_BIN_DIR}/${APP_BIN}_v${PROJ_VER} ${APP_BIN_DIR}/${APP_BIN}
-	ln --physical ${APP_BIN_DIR}/${APP_BIN}_v${PROJ_VER} ${shell pwd}/${APP_BIN}
+	${CCC} ${APP_SRC_DIR}/${APP_SRC} -o ${APP_BIN_DIR}/${APP_BIN} ${CFLAGS} ${LFLAGS} 
